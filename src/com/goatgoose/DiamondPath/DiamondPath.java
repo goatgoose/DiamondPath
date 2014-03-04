@@ -70,7 +70,6 @@ public class DiamondPath extends JavaPlugin {
                     }
                 }
             }
-
             return true;
         }
         return false;

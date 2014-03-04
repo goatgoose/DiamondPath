@@ -1,0 +1,27 @@
+name: DiamondPath
+main: com.goatgoose.diamondpath.DiamondPath
+version: 0.1
+
+commands:
+  dp:
+    description: Displays plugin info
+    usage: /dp
+    permission: diamondpath.info
+  "dp enable":
+    description: Enables a diamond trail to follow behind a chosen player, defaults to yourself
+    usage: /dp <player>
+    permission: diamondpath.enable
+  "dp disable":
+    description: Disabled the diamodn trail following a chosen player, defaults to yourself
+    permission: diamondpath.disable
+
+permissions:
+  diamondpath.info:
+    description: Allows the use of /dp to view plugin version
+    default: op
+  diamondpath.enable:
+    description: Allows you to enable the DiamondPath trail with /dp enable <player>
+    default: op
+  diamondpath.disable:
+    description: Allows you to disable the DiamondPath trail with /dp disable <player>
+    default: op
